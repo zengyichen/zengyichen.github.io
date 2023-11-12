@@ -20,20 +20,21 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="作业  1. 直接看手册，略。  2.   注意权限。可以存在 $HOME 目录下或者 export A&#x3D;$(pwd) 设置环境变量。   echo 是直接 IO，cat 是读取文件。   source *.sh 为什么没用？ *因为 source 是执行不是编译。    3. 1234567891011121314151617181920#!&#x2F;bin&#x2F;bash## 或者 solution 中用">
+  <meta name="description" content="但凡我高中有准备点信息会考都不至于这样。 课程 教材  Week 1  1.2 123from math import sqrtf &#x3D; maxy, x &#x3D; x, y # 计算完右侧再赋值  Week 2  1.4 123def f(a, b&#x3D;1):# f(a) -&gt; f(a, 1)# f(a, 2) -&gt; f(a, 2)  1.5 123456789assert a &#x3D;&#x3D; b, &amp;#x">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Missing Semester 2">
-<meta property="og:url" content="http://example.com/2023/09/30/20230930/index.html">
+<meta property="og:title" content="CS61A 1 &amp; 2">
+<meta property="og:url" content="http://example.com/2023/11/10/20231110/index.html">
 <meta property="og:site_name" content="ZYC&#39;s blog.">
-<meta property="og:description" content="作业  1. 直接看手册，略。  2.   注意权限。可以存在 $HOME 目录下或者 export A&#x3D;$(pwd) 设置环境变量。   echo 是直接 IO，cat 是读取文件。   source *.sh 为什么没用？ *因为 source 是执行不是编译。    3. 1234567891011121314151617181920#!&#x2F;bin&#x2F;bash## 或者 solution 中用">
+<meta property="og:description" content="但凡我高中有准备点信息会考都不至于这样。 课程 教材  Week 1  1.2 123from math import sqrtf &#x3D; maxy, x &#x3D; x, y # 计算完右侧再赋值  Week 2  1.4 123def f(a, b&#x3D;1):# f(a) -&gt; f(a, 1)# f(a, 2) -&gt; f(a, 2)  1.5 123456789assert a &#x3D;&#x3D; b, &amp;#x">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-09-30T10:48:13.000Z">
-<meta property="article:modified_time" content="2023-10-06T06:56:37.624Z">
+<meta property="article:published_time" content="2023-11-10T12:08:32.000Z">
+<meta property="article:modified_time" content="2023-11-12T12:53:43.310Z">
 <meta property="article:author" content="zengyichen">
-<meta property="article:tag" content="missing_semester">
+<meta property="article:tag" content="cs61a">
+<meta property="article:tag" content="python">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/2023/09/30/20230930/">
+<link rel="canonical" href="http://example.com/2023/11/10/20231110/">
 
 
 <script id="page-configurations">
@@ -46,7 +47,7 @@
   };
 </script>
 
-  <title>Missing Semester 2 | ZYC's blog.</title>
+  <title>CS61A 1 & 2 | ZYC's blog.</title>
   
 
 
@@ -171,7 +172,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2023/09/30/20230930/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/11/10/20231110/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -184,7 +185,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Missing Semester 2
+          CS61A 1 & 2
         </h1>
 
         <div class="post-meta">
@@ -194,14 +195,14 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2023-09-30 18:48:13" itemprop="dateCreated datePublished" datetime="2023-09-30T18:48:13+08:00">2023-09-30</time>
+              <time title="创建时间：2023-11-10 20:08:32" itemprop="dateCreated datePublished" datetime="2023-11-10T20:08:32+08:00">2023-11-10</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-10-06 14:56:37" itemprop="dateModified" datetime="2023-10-06T14:56:37+08:00">2023-10-06</time>
+                <time title="修改时间：2023-11-12 20:53:43" itemprop="dateModified" datetime="2023-11-12T20:53:43+08:00">2023-11-12</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -224,40 +225,35 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="作业"><a class="markdownIt-Anchor" href="#作业"></a> 作业</h2>
-<h4 id="1"><a class="markdownIt-Anchor" href="#1"></a> 1.</h4>
-<p>直接看手册，略。</p>
-<h4 id="2"><a class="markdownIt-Anchor" href="#2"></a> 2.</h4>
-<ul>
-<li>
-<p>注意权限。可以存在 <code>$HOME</code> 目录下或者 <code>export A=$(pwd)</code> 设置环境变量。</p>
-</li>
-<li>
-<p><code>echo</code> 是直接 IO，<code>cat</code> 是读取文件。</p>
-</li>
-<li>
-<p><code>source *.sh</code> 为什么没用？</p>
-<p>*因为 <code>source</code> 是执行不是编译。</p>
-</li>
-</ul>
-<h4 id="3"><a class="markdownIt-Anchor" href="#3"></a> 3.</h4>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash#</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 或者 solution 中用的 /usr/bin/env bash？似乎有区别</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">rm</span> out.txt err.txt</span><br><span class="line"><span class="built_in">echo</span> <span class="string">&quot;out.txt and err.txt removed.&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> ((cnt=<span class="number">0</span>;;cnt++)); <span class="keyword">do</span></span><br><span class="line">    bash 3.sh &gt;&gt; out.txt 2&gt;&gt; err.txt</span><br><span class="line">    <span class="comment"># 不是 source</span></span><br><span class="line">    <span class="keyword">if</span> [[ $? -ne 0 ]]; <span class="keyword">then</span></span><br><span class="line">        <span class="built_in">break</span></span><br><span class="line">    <span class="keyword">fi</span></span><br><span class="line"><span class="keyword">done</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> <span class="string">&quot;Error occured after <span class="variable">$cnt</span> runs.&quot;</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">&quot;stdout:&quot;</span></span><br><span class="line"><span class="built_in">cat</span> out.txt</span><br><span class="line"><span class="built_in">echo</span> <span class="string">&quot;stderr:&quot;</span></span><br><span class="line"><span class="built_in">cat</span> err.txt</span><br></pre></td></tr></table></figure>
-<p><code>bash</code> 和 <code>./</code> 类似，后者要权限（用 <code>chmod</code>）。这两个的原理是新开一个 shell 运行。</p>
-<p>在 <code>3.sh</code>（题目给的代码）中有 <code>exit 1</code>，用 <code>source</code> 到这里会直接退出 bash，因为 <code>source</code> 的原理是直接在本 shell 运行。还有一种写法是把 <code>source</code> 替换成 <code>.</code>。</p>
-<p>还有一个 <code>sh</code>，与 <code>bash</code> 的区别是：</p>
+        <p>但凡我高中有准备点信息会考都不至于这样。</p>
+<p><a target="_blank" rel="noopener" href="https://cs61a.org/">课程</a><br />
+<a target="_blank" rel="noopener" href="https://composingprograms.netlify.app/">教材</a></p>
+<h2 id="week-1"><a class="markdownIt-Anchor" href="#week-1"></a> Week 1</h2>
+<h4 id="12"><a class="markdownIt-Anchor" href="#12"></a> 1.2</h4>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> math <span class="keyword">import</span> sqrt</span><br><span class="line">f = <span class="built_in">max</span></span><br><span class="line">y, x = x, y <span class="comment"># 计算完右侧再赋值</span></span><br></pre></td></tr></table></figure>
+<h2 id="week-2"><a class="markdownIt-Anchor" href="#week-2"></a> Week 2</h2>
+<h4 id="14"><a class="markdownIt-Anchor" href="#14"></a> 1.4</h4>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">f</span>(<span class="params">a, b=<span class="number">1</span></span>):</span><br><span class="line"><span class="comment"># f(a) -&gt; f(a, 1)</span></span><br><span class="line"><span class="comment"># f(a, 2) -&gt; f(a, 2)</span></span><br></pre></td></tr></table></figure>
+<h4 id="15"><a class="markdownIt-Anchor" href="#15"></a> 1.5</h4>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">assert</span> a == b, <span class="string">&#x27;a != b.&#x27;</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string"><span class="meta">&gt;&gt;&gt; </span>command</span></span><br><span class="line"><span class="string">result</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">from</span> doctest <span class="keyword">import</span> testmod</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>testmod()</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>run_docstring_examples(f, <span class="keyword">global</span>(), <span class="literal">True</span>)</span><br></pre></td></tr></table></figure>
+<h4 id="16"><a class="markdownIt-Anchor" href="#16"></a> 1.6</h4>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">f</span>(<span class="params">term</span>):</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">compose</span>(<span class="params">f, g</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">h</span>(<span class="params">x</span>):</span><br><span class="line">        <span class="keyword">return</span> f(g(x))</span><br><span class="line">    <span class="keyword">return</span> h</span><br><span class="line"><span class="comment"># curring</span></span><br><span class="line"><span class="comment"># f(x, y) =&gt; f(x)</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">curried_pow</span>(<span class="params">x</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">h</span>(<span class="params">y</span>):</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">pow</span>(x, y)</span><br><span class="line">    <span class="keyword">return</span> h</span><br><span class="line"><span class="keyword">lambda</span> x: f(x)</span><br></pre></td></tr></table></figure>
+<h6 id="装饰器"><a class="markdownIt-Anchor" href="#装饰器"></a> 装饰器：</h6>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@f</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">g</span>():</span><br><span class="line"><span class="comment"># ...</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">g</span>():</span><br><span class="line"><span class="comment"># ...</span></span><br><span class="line">g = f(g)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 二者等价</span></span><br><span class="line"><span class="comment"># 注意 f 的参数和返回值都是函数</span></span><br></pre></td></tr></table></figure>
+<p>当然这只是最基础的。</p>
+<p>(进阶)[<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/640193185">https://zhuanlan.zhihu.com/p/640193185</a>]</p>
+<h4 id="hw-02"><a class="markdownIt-Anchor" href="#hw-02"></a> HW 02</h4>
 <blockquote>
-<p>sh 遵循 POSIX 规范：“当某行代码出错时，不继续往下解释”。bash 就算出错，也会继续向下执行。</p>
+<p>You’re not allowed to rebind variables defined outside of our current frame!</p>
 </blockquote>
-<p>试了一下编译过不了。这其实属于<a target="_blank" rel="noopener" href="http://mywiki.wooledge.org/BashFAQ/031">历史遗留问题</a>。</p>
-<h4 id="4"><a class="markdownIt-Anchor" href="#4"></a> 4.</h4>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">find . -name <span class="string">&quot;*.css&quot;</span> -<span class="built_in">exec</span> zip csss.zip &#123;&#125; +</span><br></pre></td></tr></table></figure>
+<p>（对于函数）里面不能改外面的变量。可以 <code>nonlocal</code>，或者建一个新的。<code>nonlocal</code> 在里面用，<code>global</code> 在外面用。</p>
+<p>frame 搜不出东西，可能是本书自己造的概念。类似的说法比如 scope（作用域）。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">lambda</span> x, y: x % y <span class="keyword">or</span> <span class="literal">True</span></span><br></pre></td></tr></table></figure>
+<p><code>x % y != 0</code> 时短路，返回的是 <code>x % y</code> 而非 <code>or</code> 运算得出的 <code>True</code>。</p>
+<h4 id="project-01-hog"><a class="markdownIt-Anchor" href="#project-01-hog"></a> Project 01 (Hog)</h4>
 <ul>
-<li><code>-name</code> 不直接操作文件，所以格式是字符串。</li>
-<li><code>zip</code> 后第二个参数用 <code>&#123;&#125;</code> 表示 <code>find</code> 的结果。</li>
-<li><code>+</code> 结束 <code>-exec</code>。</li>
+<li>用二次定义的函数时，外层的数据都会保留。显然必须是这样的，虽然与 C++ 不一样。</li>
 </ul>
-<hr />
-<p>老东西不会写代码了。</p>
 
     </div>
 
@@ -267,7 +263,8 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/missing-semester/" rel="tag"># missing_semester</a>
+              <a href="/tags/cs61a/" rel="tag"># cs61a</a>
+              <a href="/tags/python/" rel="tag"># python</a>
           </div>
 
         
@@ -276,12 +273,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2023/09/08/20230908/" rel="prev" title="起点">
-      <i class="fa fa-chevron-left"></i> 起点
+    <a href="/2023/11/05/20231105/" rel="prev" title="Rhino Grasshopper">
+      <i class="fa fa-chevron-left"></i> Rhino Grasshopper
     </a></div>
       <div class="post-nav-item">
-    <a href="/2023/10/06/20231006/" rel="next" title="Missing Semester 3">
-      Missing Semester 3 <i class="fa fa-chevron-right"></i>
+    <a href="/2023/11/11/slidev/test/" rel="next" title="">
+       <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -341,7 +338,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%9C%E4%B8%9A"><span class="nav-number">1.</span> <span class="nav-text"> 作业</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1"><span class="nav-number">1.0.1.</span> <span class="nav-text"> 1.</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2"><span class="nav-number">1.0.2.</span> <span class="nav-text"> 2.</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3"><span class="nav-number">1.0.3.</span> <span class="nav-text"> 3.</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4"><span class="nav-number">1.0.4.</span> <span class="nav-text"> 4.</span></a></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#week-1"><span class="nav-number">1.</span> <span class="nav-text"> Week 1</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#12"><span class="nav-number">1.0.1.</span> <span class="nav-text"> 1.2</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#week-2"><span class="nav-number">2.</span> <span class="nav-text"> Week 2</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#14"><span class="nav-number">2.0.1.</span> <span class="nav-text"> 1.4</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#15"><span class="nav-number">2.0.2.</span> <span class="nav-text"> 1.5</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#16"><span class="nav-number">2.0.3.</span> <span class="nav-text"> 1.6</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#%E8%A3%85%E9%A5%B0%E5%99%A8"><span class="nav-number">2.0.3.0.1.</span> <span class="nav-text"> 装饰器：</span></a></li></ol></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#hw-02"><span class="nav-number">2.0.4.</span> <span class="nav-text"> HW 02</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#project-01-hog"><span class="nav-number">2.0.5.</span> <span class="nav-text"> Project 01 (Hog)</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
